@@ -1,0 +1,1075 @@
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="ExDoc v0.12.0">
+    <title>M2X.Device – m2x v2.0.0</title>
+    <link rel="stylesheet" href="dist/app-88251e7c81.css" />
+    
+    <script src="dist/sidebar_items.js"></script>
+  </head>
+  <body data-type="modules">
+
+    <div class="main">
+<button class="sidebar-toggle">
+  <i class="icon-menu"></i>
+</button>
+<section class="sidebar">
+
+  
+  <a href="api-reference.html" class="sidebar-projectLink">
+    <div class="sidebar-projectDetails">
+      <h1 class="sidebar-projectName">
+        m2x
+      </h1>
+      <h2 class="sidebar-projectVersion">
+        v2.0.0
+      </h2>
+    </div>
+    
+  </a>
+
+  <div class="sidebar-search">
+    <i class="icon-search"></i>
+    <input type="text" class="sidebar-searchInput" placeholder="search" autocomplete="off" />
+  </div>
+
+  <ul class="sidebar-listNav">
+    <li><a id="extras-list" href="#full-list">Pages</a></li>
+
+    
+      <li><a id="modules-list" href="#full-list">Modules</a></li>
+    
+
+    
+
+    
+  </ul>
+
+  <ul id="full-list" class="sidebar-fullList"></ul>
+  <div class="sidebar-noResults"></div>
+</section>
+
+<section class="content">
+  <div class="content-outer">
+    <div id="content" class="content-inner">
+
+
+      <h1>
+        <small class="visible-xs">m2x v2.0.0</small>
+        M2X.Device
+        
+        
+      </h1>
+
+      
+        <section id="moduledoc" class="docstring">
+          <p>  Wrapper for the AT&amp;T M2X <a href="https://m2x.att.com/developer/documentation/v2/device"> Device API </a></p>
+
+        </section>
+      
+
+      
+        <section id="summary" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#summary">
+              <i class="icon-link"></i>
+            </a>
+            Summary
+          </h1>
+          
+
+          
+  <div class="summary-functions summary">
+    <h2>
+      <a href="#functions">Functions</a>
+    </h2>
+    <div class="summary-row">
+  <div class="summary-signature">
+    <a href="#catalog/2">catalog(client, params \\ nil)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Method for <a href="https://m2x.att.com/developer/documentation/v2/device#List-Public-Devices-Catalog">List/Search Public Devices Catalog</a> endpoint</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#command/2">command(device, command_id)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Method for <a href="https://m2x.att.com/developer/documentation/v2/commands#Device-s-View-of-Command-Details">Device’s View of Command Details</a> endpoint</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#commands/1">commands(device)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Method for <a href="https://m2x.att.com/developer/documentation/v2/commands#Device-s-List-of-Received-Commands">Device’s List of Received Commands</a> endpoint</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#create!/2">create!(client, params \\ %{})</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Create a new resource using the given client and optional params,
+  returning a struct with the attrs of the new resource</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#create_stream/3">create_stream(a, b, c)</a>
+  </div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete!/1">delete!(device)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Delete the remote resource</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete_location_history/2">delete_location_history(device, params)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Method for <a href="https://m2x.att.com/developer/documentation/v2/device#Delete-Location-History">Delete Location History</a> endpoint</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#fetch/2">fetch(client, id)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Method for <a href="https://m2x.att.com/developer/documentation/v2/device#View-Device-Details">View Device Details</a> endpoint</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_location/1">get_location(device)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Method for <a href="https://m2x.att.com/developer/documentation/v2/device#Read-Device-Location">Read Device Location</a> endpoint</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_metadata_field/2">get_metadata_field(device, name)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Method for <a href="https://m2x.att.com/developer/documentation/v2/device#Read-Device-Metadata-Field">Read Device Metadata Field</a> endpoint</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#list/2">list(client, params \\ nil)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Method for <a href="https://m2x.att.com/developer/documentation/v2/device#List-Devices">List Devices</a> endpoint</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#location_history/2">location_history(device, params \\ %{})</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Method for <a href="https://m2x.att.com/developer/documentation/v2/device#Read-Device-Location-History">Read Device Location History</a> endpoint</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#metadata/1">metadata(device)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Method for <a href="https://m2x.att.com/developer/documentation/v2/device#Read-Device-Metadata">Read Device Metadata</a> endpoint</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#path/1">path(uid)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Return the API path of the Resource</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#post_update/2">post_update(device, params)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Method for <a href="https://m2x.att.com/developer/documentation/v2/device#Post-Device-Update--Single-Values-to-Multiple-Streams-">Post Device Update (Single Values to Multiple Streams)</a> endpoint</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#post_updates/2">post_updates(device, params)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Method for <a href="https://m2x.att.com/developer/documentation/v2/device#Post-Device-Updates--Multiple-Values-to-Multiple-Streams-">Post Device Update (Multiple Values to Multiple Streams)</a> endpoint</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#process_command/3">process_command(device, command, params \\ %{})</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Method for <a href="https://m2x.att.com/developer/documentation/v2/commands#Device-Marks-a-Command-as-Processed">Device Marks a Command as Processed</a> endpoint.
+  Mark the given command as processed by this Device</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#refreshed/1">refreshed(device)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Query the service and return a refreshed version of the same
+  resource struct with all attrs set to their latest values</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#reject_command/3">reject_command(device, command, params \\ %{})</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Method for <a href="https://m2x.att.com/developer/documentation/v2/commands#Device-Marks-a-Command-as-Rejected">Device Marks a Command as Rejected</a> endpoint</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#search/2">search(client, params \\ nil)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Method for <a href="https://m2x.att.com/developer/documentation/v2/device#Search-Devices">Search Devices</a> endpoint</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#set_metadata_field/3">set_metadata_field(device, name, value)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Method for <a href="https://m2x.att.com/developer/documentation/v2/device#Update-Device-Metadata-Field">Update Device Metadata Field</a> endpoint</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#stream/2">stream(device, name)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Method for <a href="https://m2x.att.com/developer/documentation/v2/device#View-Data-Stream">View Data Stream</a> endpoint</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#streams/1">streams(device)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Method for <a href="https://m2x.att.com/developer/documentation/v2/device#List-Data-Streams">List Data Streams</a> endpoint</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#update!/2">update!(device, params)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Update the remote resource using the given attrs</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#update_location/2">update_location(device, params)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Method for <a href="https://m2x.att.com/developer/documentation/v2/device#Update-Device-Location">Update Device Location</a> endpoint</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#update_metadata/2">update_metadata(device, params)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Method for <a href="https://m2x.att.com/developer/documentation/v2/device#Update-Device-Metadata">Update Device Metadata</a> endpoint</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#update_stream/3">update_stream(device, name, params)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Method for <a href="https://m2x.att.com/developer/documentation/v2/device#Create-Update-Data-Stream">Create/Update Data Stream</a> endpoint</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#values/2">values(device, params)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Method for <a href="https://m2x.att.com/developer/documentation/v2/device#List-Values-from-all-Data-Streams-of-a-Device">List Values from all Data Streams of a Device</a> endpoint</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#values_export_csv/2">values_export_csv(device, params \\ %{})</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Method for <a href="https://m2x.att.com/developer/documentation/v2/device#Export-Values-from-all-Data-Streams-of-a-Device">Export Values from all Data Streams of a Device</a> endpoint</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#values_search/2">values_search(device, params)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Method for <a href="https://m2x.att.com/developer/documentation/v2/device#Search-Values-from-all-Data-Streams-of-a-Device">Search Values from all Data Streams of a Device</a> endpoint</p>
+</div>
+  
+</div>
+
+  </div>
+
+
+          
+
+          
+
+        </section>
+      
+
+      
+
+      
+        <section id="functions" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#functions">
+              <i class="icon-link"></i>
+            </a>
+            Functions
+          </h1>
+          <div class="detail" id="catalog/2">
+  <div class="detail-header">
+    <a href="#catalog/2" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">catalog(client, params \\ nil)</span>
+    
+    
+  </div>
+  
+  <section class="docstring">
+    <p>  Method for <a href="https://m2x.att.com/developer/documentation/v2/device#List-Public-Devices-Catalog">List/Search Public Devices Catalog</a> endpoint.</p>
+<p>  This allows unauthenticated users to search Devices from other users
+  that have been marked as public, allowing them to read public Device
+  metadata, locations, streams list, and view each Devices’ stream metadata
+  and its values.</p>
+<ul>
+<li>client: M2X.Client struct
+</li>
+<li>params: Query parameters passed as keyword arguments. View M2X API Docs for listing of available parameters.
+</li>
+<li>Returns: List of Devices
+</li>
+</ul>
+
+  </section>
+</div>
+<div class="detail" id="command/2">
+  <div class="detail-header">
+    <a href="#command/2" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">command(device, command_id)</span>
+    
+    
+  </div>
+  
+  <section class="docstring">
+    <p>  Method for <a href="https://m2x.att.com/developer/documentation/v2/commands#Device-s-View-of-Command-Details">Device’s View of Command Details</a> endpoint.</p>
+<p>  Get details of a received command for this Device.</p>
+<ul>
+<li>device: M2X.Device struct
+</li>
+<li>command_id: ID of the Command to retrieve
+</li>
+<li>Returns: The API response, see M2X API docs for details
+</li>
+</ul>
+
+  </section>
+</div>
+<div class="detail" id="commands/1">
+  <div class="detail-header">
+    <a href="#commands/1" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">commands(device)</span>
+    
+    
+  </div>
+  
+  <section class="docstring">
+    <p>  Method for <a href="https://m2x.att.com/developer/documentation/v2/commands#Device-s-List-of-Received-Commands">Device’s List of Received Commands</a> endpoint.</p>
+<p>  Retrieve the list of recent commands sent to the Device.</p>
+<ul>
+<li>device: M2X.Device struct
+</li>
+<li>Returns: The API response, see M2X API docs for details
+</li>
+</ul>
+
+  </section>
+</div>
+<div class="detail" id="create!/2">
+  <div class="detail-header">
+    <a href="#create!/2" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">create!(client, params \\ %{})</span>
+    
+    
+  </div>
+  
+  <section class="docstring">
+    <p>  Create a new resource using the given client and optional params,
+  returning a struct with the attrs of the new resource.</p>
+
+  </section>
+</div>
+<div class="detail" id="create_stream/3">
+  <div class="detail-header">
+    <a href="#create_stream/3" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">create_stream(a, b, c)</span>
+    
+    
+  </div>
+  
+  <section class="docstring">
+    
+  </section>
+</div>
+<div class="detail" id="delete!/1">
+  <div class="detail-header">
+    <a href="#delete!/1" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">delete!(device)</span>
+    
+    
+  </div>
+  
+  <section class="docstring">
+    <p>  Delete the remote resource.</p>
+
+  </section>
+</div>
+<div class="detail" id="delete_location_history/2">
+  <div class="detail-header">
+    <a href="#delete_location_history/2" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">delete_location_history(device, params)</span>
+    
+    
+  </div>
+  
+  <section class="docstring">
+    <p>  Method for <a href="https://m2x.att.com/developer/documentation/v2/device#Delete-Location-History">Delete Location History</a> endpoint.</p>
+<p>  Delete location history of the specified device.</p>
+<ul>
+<li>device: M2X.Device struct
+</li>
+<li>params: Query parameters passed as keyword arguments. View M2X API Docs for listing of available parameters
+</li>
+<li>Returns: The API response, see M2X API docs for details
+</li>
+</ul>
+
+  </section>
+</div>
+<div class="detail" id="fetch/2">
+  <div class="detail-header">
+    <a href="#fetch/2" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">fetch(client, id)</span>
+    
+    
+  </div>
+  
+  <section class="docstring">
+    <p>  Method for <a href="https://m2x.att.com/developer/documentation/v2/device#View-Device-Details">View Device Details</a> endpoint.</p>
+<p>  Retrieve a view of the Device associated with the given unique id.</p>
+<ul>
+<li>client: M2X.Client struct
+</li>
+<li>id: ID of the Device to retrieve
+</li>
+<li>Returns: The matching Device
+</li>
+</ul>
+
+  </section>
+</div>
+<div class="detail" id="get_location/1">
+  <div class="detail-header">
+    <a href="#get_location/1" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">get_location(device)</span>
+    
+    
+  </div>
+  
+  <section class="docstring">
+    <p>  Method for <a href="https://m2x.att.com/developer/documentation/v2/device#Read-Device-Location">Read Device Location</a> endpoint.</p>
+<p>  Get location details of an existing Device.
+  Note that this method can return an empty value (response status
+  of 204) if the device has no location defined.</p>
+<ul>
+<li>device: M2X.Device struct
+</li>
+<li>Returns: Most recently logged location of the Device, see M2X API docs for details
+</li>
+</ul>
+
+  </section>
+</div>
+<div class="detail" id="get_metadata_field/2">
+  <div class="detail-header">
+    <a href="#get_metadata_field/2" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">get_metadata_field(device, name)</span>
+    
+    
+  </div>
+  
+  <section class="docstring">
+    <p>  Method for <a href="https://m2x.att.com/developer/documentation/v2/device#Read-Device-Metadata-Field">Read Device Metadata Field</a> endpoint.</p>
+<p>  Get the custom metadata for the specified Device.</p>
+<ul>
+<li>device: M2X.Device struct
+</li>
+<li>name: The metadata field to be read
+</li>
+<li>Returns: The API response, see M2X API docs for details
+</li>
+</ul>
+
+  </section>
+</div>
+<div class="detail" id="list/2">
+  <div class="detail-header">
+    <a href="#list/2" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">list(client, params \\ nil)</span>
+    
+    
+  </div>
+  
+  <section class="docstring">
+    <p>  Method for <a href="https://m2x.att.com/developer/documentation/v2/device#List-Devices">List Devices</a> endpoint.</p>
+<p>  Retrieve the list of Devices accessible by the authenticated API key.</p>
+<ul>
+<li>client: M2X.Client struct
+</li>
+<li>params: Query parameters passed as keyword arguments. View M2X API Docs for listing of available parameters.
+</li>
+<li>Returns: List of Devices
+</li>
+</ul>
+
+  </section>
+</div>
+<div class="detail" id="location_history/2">
+  <div class="detail-header">
+    <a href="#location_history/2" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">location_history(device, params \\ %{})</span>
+    
+    
+  </div>
+  
+  <section class="docstring">
+    <p>  Method for <a href="https://m2x.att.com/developer/documentation/v2/device#Read-Device-Location-History">Read Device Location History</a> endpoint.</p>
+<p>  Get location history details of an existing Device.</p>
+<ul>
+<li>device: M2X.Device struct
+</li>
+<li>params: Query parameters passed as keyword arguments. View M2X API Docs for listing of available parameters
+</li>
+<li>Returns: Location history of the Device
+</li>
+</ul>
+
+  </section>
+</div>
+<div class="detail" id="metadata/1">
+  <div class="detail-header">
+    <a href="#metadata/1" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">metadata(device)</span>
+    
+    
+  </div>
+  
+  <section class="docstring">
+    <p>  Method for <a href="https://m2x.att.com/developer/documentation/v2/device#Read-Device-Metadata">Read Device Metadata</a> endpoint.</p>
+<p>  Get the custom metadata for the specified Device.</p>
+<ul>
+<li>device: M2X.Device struct
+</li>
+<li>Returns: User defined metadata associated with the device
+</li>
+</ul>
+
+  </section>
+</div>
+<div class="detail" id="path/1">
+  <div class="detail-header">
+    <a href="#path/1" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">path(uid)</span>
+    
+    
+  </div>
+  
+  <section class="docstring">
+    <p>  Return the API path of the Resource.</p>
+
+  </section>
+</div>
+<div class="detail" id="post_update/2">
+  <div class="detail-header">
+    <a href="#post_update/2" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">post_update(device, params)</span>
+    
+    
+  </div>
+  
+  <section class="docstring">
+    <p>  Method for <a href="https://m2x.att.com/developer/documentation/v2/device#Post-Device-Update--Single-Values-to-Multiple-Streams-">Post Device Update (Single Values to Multiple Streams)</a> endpoint.</p>
+<p>  This method allows posting single values to multiple streams.</p>
+<ul>
+<li>device: M2X.Device struct
+</li>
+<li>params: The values being posted, formatted according to the API docs
+</li>
+<li>Returns: The API response, see M2X API docs for details
+</li>
+</ul>
+
+  </section>
+</div>
+<div class="detail" id="post_updates/2">
+  <div class="detail-header">
+    <a href="#post_updates/2" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">post_updates(device, params)</span>
+    
+    
+  </div>
+  
+  <section class="docstring">
+    <p>  Method for <a href="https://m2x.att.com/developer/documentation/v2/device#Post-Device-Updates--Multiple-Values-to-Multiple-Streams-">Post Device Update (Multiple Values to Multiple Streams)</a> endpoint.</p>
+<p>  This method allows posting multiple values to multiple streams
+  belonging to a device and optionally, the device location.</p>
+<ul>
+<li>device: M2X.Device struct
+</li>
+<li>params: The values being posted, formatted according to the API docs
+</li>
+<li>Returns: The API response, see M2X API docs for details
+</li>
+</ul>
+
+  </section>
+</div>
+<div class="detail" id="process_command/3">
+  <div class="detail-header">
+    <a href="#process_command/3" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">process_command(device, command, params \\ %{})</span>
+    
+    
+  </div>
+  
+  <section class="docstring">
+    <p>  Method for <a href="https://m2x.att.com/developer/documentation/v2/commands#Device-Marks-a-Command-as-Processed">Device Marks a Command as Processed</a> endpoint.
+  Mark the given command as processed by this Device.</p>
+<ul>
+<li>device: M2X.Device struct
+</li>
+<li>id: ID of the Command being marked as processed
+</li>
+<li>Returns: The API response, see M2X API docs for details
+</li>
+</ul>
+
+  </section>
+</div>
+<div class="detail" id="refreshed/1">
+  <div class="detail-header">
+    <a href="#refreshed/1" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">refreshed(device)</span>
+    
+    
+  </div>
+  
+  <section class="docstring">
+    <p>  Query the service and return a refreshed version of the same
+  resource struct with all attrs set to their latest values.</p>
+
+  </section>
+</div>
+<div class="detail" id="reject_command/3">
+  <div class="detail-header">
+    <a href="#reject_command/3" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">reject_command(device, command, params \\ %{})</span>
+    
+    
+  </div>
+  
+  <section class="docstring">
+    <p>  Method for <a href="https://m2x.att.com/developer/documentation/v2/commands#Device-Marks-a-Command-as-Rejected">Device Marks a Command as Rejected</a> endpoint.</p>
+<p>  Mark the given command as rejected by this Device.</p>
+<ul>
+<li>device: M2X.Device struct
+</li>
+<li>id: ID of the Command being marked as rejected
+</li>
+<li>Returns: The API response, see M2X API docs for details
+</li>
+</ul>
+
+  </section>
+</div>
+<div class="detail" id="search/2">
+  <div class="detail-header">
+    <a href="#search/2" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">search(client, params \\ nil)</span>
+    
+    
+  </div>
+  
+  <section class="docstring">
+    <p>  Method for <a href="https://m2x.att.com/developer/documentation/v2/device#Search-Devices">Search Devices</a> endpoint.</p>
+<p>  Retrieve the list of Devices accessible by the authenticated API key that
+  meet the search criteria.</p>
+<ul>
+<li>client: M2X.Client struct
+</li>
+<li>params: Query parameters passed as keyword arguments. View M2X API Docs for listing of available parameters.
+</li>
+<li>Returns: List of Devices
+</li>
+</ul>
+
+  </section>
+</div>
+<div class="detail" id="set_metadata_field/3">
+  <div class="detail-header">
+    <a href="#set_metadata_field/3" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">set_metadata_field(device, name, value)</span>
+    
+    
+  </div>
+  
+  <section class="docstring">
+    <p>  Method for <a href="https://m2x.att.com/developer/documentation/v2/device#Update-Device-Metadata-Field">Update Device Metadata Field</a> endpoint.</p>
+<p>  Update the custom metadata field for the specified Device.</p>
+<ul>
+<li>device: M2X.Device struct
+</li>
+<li>name: The metadata field to be updated
+</li>
+<li>value: The value to update
+</li>
+<li>Returns: The API response, see M2X API docs for details
+</li>
+</ul>
+
+  </section>
+</div>
+<div class="detail" id="stream/2">
+  <div class="detail-header">
+    <a href="#stream/2" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">stream(device, name)</span>
+    
+    
+  </div>
+  
+  <section class="docstring">
+    <p>  Method for <a href="https://m2x.att.com/developer/documentation/v2/device#View-Data-Stream">View Data Stream</a> endpoint.</p>
+<p>  Get details of a specific Stream associated with the Device.</p>
+<ul>
+<li>device: M2X.Device struct
+</li>
+<li>name: The name of the Stream being retrieved
+</li>
+<li>Returns: The matching Stream
+</li>
+</ul>
+
+  </section>
+</div>
+<div class="detail" id="streams/1">
+  <div class="detail-header">
+    <a href="#streams/1" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">streams(device)</span>
+    
+    
+  </div>
+  
+  <section class="docstring">
+    <p>  Method for <a href="https://m2x.att.com/developer/documentation/v2/device#List-Data-Streams">List Data Streams</a> endpoint.</p>
+<p>  Retrieve list of Streams associated with the specified Device.</p>
+<ul>
+<li>device: M2X.Device struct
+</li>
+<li>Returns: List of data streams associated with this device as Stream objects
+</li>
+</ul>
+
+  </section>
+</div>
+<div class="detail" id="update!/2">
+  <div class="detail-header">
+    <a href="#update!/2" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">update!(device, params)</span>
+    
+    
+  </div>
+  
+  <section class="docstring">
+    <p>  Update the remote resource using the given attrs.</p>
+
+  </section>
+</div>
+<div class="detail" id="update_location/2">
+  <div class="detail-header">
+    <a href="#update_location/2" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">update_location(device, params)</span>
+    
+    
+  </div>
+  
+  <section class="docstring">
+    <p>  Method for <a href="https://m2x.att.com/developer/documentation/v2/device#Update-Device-Location">Update Device Location</a> endpoint.</p>
+<p>  Update the current location of the specified device.</p>
+<ul>
+<li>device: M2X.Device struct
+</li>
+<li>params: Query parameters passed as keyword arguments. View M2X API Docs for listing of available parameters
+</li>
+<li>Returns: The API response, see M2X API docs for details
+</li>
+</ul>
+
+  </section>
+</div>
+<div class="detail" id="update_metadata/2">
+  <div class="detail-header">
+    <a href="#update_metadata/2" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">update_metadata(device, params)</span>
+    
+    
+  </div>
+  
+  <section class="docstring">
+    <p>  Method for <a href="https://m2x.att.com/developer/documentation/v2/device#Update-Device-Metadata">Update Device Metadata</a> endpoint.</p>
+<p>  Update the custom metadata for the specified Device.</p>
+<ul>
+<li>device: M2X.Device struct
+</li>
+<li>params: Query parameters passed as keyword arguments. View M2X API Docs for listing of available parameters
+</li>
+<li>Returns: The API response, see M2X API docs for details
+</li>
+</ul>
+
+  </section>
+</div>
+<div class="detail" id="update_stream/3">
+  <div class="detail-header">
+    <a href="#update_stream/3" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">update_stream(device, name, params)</span>
+    
+    
+  </div>
+  
+  <section class="docstring">
+    <p>  Method for <a href="https://m2x.att.com/developer/documentation/v2/device#Create-Update-Data-Stream">Create/Update Data Stream</a> endpoint.</p>
+<p>  Update a Stream associated with the Device with the given parameters.
+  If a Stream with this name does not exist it will be created.</p>
+<ul>
+<li>device: M2X.Device struct
+</li>
+<li>name: Name of the stream to be updated
+</li>
+<li>params: Query parameters passed as keyword arguments. View M2X API Docs for listing of available parameters
+</li>
+<li>Returns: The Stream being updated
+</li>
+</ul>
+
+  </section>
+</div>
+<div class="detail" id="values/2">
+  <div class="detail-header">
+    <a href="#values/2" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">values(device, params)</span>
+    
+    
+  </div>
+  
+  <section class="docstring">
+    <p>  Method for <a href="https://m2x.att.com/developer/documentation/v2/device#List-Values-from-all-Data-Streams-of-a-Device">List Values from all Data Streams of a Device</a> endpoint.</p>
+<ul>
+<li>device: M2X.Device struct
+</li>
+<li>params: Query parameters passed as keyword arguments. View M2X API Docs for listing of available parameters
+</li>
+<li>Returns: The API response, see M2X API docs for details
+</li>
+</ul>
+
+  </section>
+</div>
+<div class="detail" id="values_export_csv/2">
+  <div class="detail-header">
+    <a href="#values_export_csv/2" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">values_export_csv(device, params \\ %{})</span>
+    
+    
+  </div>
+  
+  <section class="docstring">
+    <p>  Method for <a href="https://m2x.att.com/developer/documentation/v2/device#Export-Values-from-all-Data-Streams-of-a-Device">Export Values from all Data Streams of a Device</a> endpoint.</p>
+<ul>
+<li>device: M2X.Device struct
+</li>
+<li>params: Query parameters passed as keyword arguments. View M2X API Docs for listing of available parameters
+</li>
+<li>Returns: The API response, see M2X API docs for details
+</li>
+</ul>
+
+  </section>
+</div>
+<div class="detail" id="values_search/2">
+  <div class="detail-header">
+    <a href="#values_search/2" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">values_search(device, params)</span>
+    
+    
+  </div>
+  
+  <section class="docstring">
+    <p>  Method for <a href="https://m2x.att.com/developer/documentation/v2/device#Search-Values-from-all-Data-Streams-of-a-Device">Search Values from all Data Streams of a Device</a> endpoint.</p>
+<ul>
+<li>device: M2X.Device struct
+</li>
+<li>params: Query parameters passed as keyword arguments. View M2X API Docs for listing of available parameters
+</li>
+<li>Returns: The API response, see M2X API docs for details
+</li>
+</ul>
+
+  </section>
+</div>
+
+        </section>
+      
+
+      
+
+      
+          <footer class="footer">
+        <p>
+          <span class="line">
+            Built using
+            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" rel="help" target="_blank">ExDoc</a> (v0.12.0),
+          </span>
+          <span class="line">
+            designed by
+            <a href="https://twitter.com/dignifiedquire" target="_blank" title="@dignifiedquire">Friedel Ziegelmayer</a>.
+            </span>
+        </p>
+        <button class="night-mode-toggle" />
+      </footer>
+    </div>
+  </div>
+</section>
+</div>
+  <script src="dist/app-21f1a20b9e.js"></script>
+  </body>
+</html>
+

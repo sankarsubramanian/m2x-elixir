@@ -16,7 +16,9 @@ defmodule M2X.Mixfile do
 
   defp dependencies do
     [ hackney: "~> 1.0",
-      json:    "~> 0.3" ]
+      json:    "~> 0.3",
+      earmark: "~> 0.1",
+      ex_doc: "~> 0.11" ]
   end
 
   defp description do

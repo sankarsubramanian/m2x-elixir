@@ -1,0 +1,530 @@
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="ExDoc v0.12.0">
+    <title>M2X.Collection – m2x v2.0.0</title>
+    <link rel="stylesheet" href="dist/app-88251e7c81.css" />
+    
+    <script src="dist/sidebar_items.js"></script>
+  </head>
+  <body data-type="modules">
+
+    <div class="main">
+<button class="sidebar-toggle">
+  <i class="icon-menu"></i>
+</button>
+<section class="sidebar">
+
+  
+  <a href="api-reference.html" class="sidebar-projectLink">
+    <div class="sidebar-projectDetails">
+      <h1 class="sidebar-projectName">
+        m2x
+      </h1>
+      <h2 class="sidebar-projectVersion">
+        v2.0.0
+      </h2>
+    </div>
+    
+  </a>
+
+  <div class="sidebar-search">
+    <i class="icon-search"></i>
+    <input type="text" class="sidebar-searchInput" placeholder="search" autocomplete="off" />
+  </div>
+
+  <ul class="sidebar-listNav">
+    <li><a id="extras-list" href="#full-list">Pages</a></li>
+
+    
+      <li><a id="modules-list" href="#full-list">Modules</a></li>
+    
+
+    
+
+    
+  </ul>
+
+  <ul id="full-list" class="sidebar-fullList"></ul>
+  <div class="sidebar-noResults"></div>
+</section>
+
+<section class="content">
+  <div class="content-outer">
+    <div id="content" class="content-inner">
+
+
+      <h1>
+        <small class="visible-xs">m2x v2.0.0</small>
+        M2X.Collection
+        
+        
+      </h1>
+
+      
+        <section id="moduledoc" class="docstring">
+          <p>  Wrapper for the AT&amp;T M2X <a href="https://m2x.att.com/developer/documentation/v2/collections"> Collection API </a></p>
+
+        </section>
+      
+
+      
+        <section id="summary" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#summary">
+              <i class="icon-link"></i>
+            </a>
+            Summary
+          </h1>
+          
+
+          
+  <div class="summary-functions summary">
+    <h2>
+      <a href="#functions">Functions</a>
+    </h2>
+    <div class="summary-row">
+  <div class="summary-signature">
+    <a href="#add_device/3">add_device(collection, device_id, params)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Method for <a href="https://m2x.att.com/developer/documentation/v2/collections#Add-device-to-collection">Add device to collection</a> endpoint</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#create!/2">create!(client, params \\ %{})</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Create a new resource using the given client and optional params,
+  returning a struct with the attrs of the new resource</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete!/1">delete!(collection)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Delete the remote resource</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#fetch/2">fetch(client, id)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Method for <a href="https://m2x.att.com/developer/documentation/v2/collections#View-Collection-Details">View Collection Details</a> endpoint</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_metadata_field/2">get_metadata_field(collection, name)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Method for <a href="https://m2x.att.com/developer/documentation/v2/collections#Read-Collection-Metadata-Field">Read Collection Metadata Field</a> endpoint</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#list/2">list(client, params \\ nil)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Method for <a href="https://m2x.att.com/developer/documentation/v2/collections#List-collections">List collections</a> endpoint</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#metadata/1">metadata(collection)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Method for <a href="https://m2x.att.com/developer/documentation/v2/collections#Read-Collection-Metadata">Read Collection Metadata</a> endpoint</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#path/1">path(uid)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Return the API path of the Resource</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#refreshed/1">refreshed(collection)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Query the service and return a refreshed version of the same
+  resource struct with all attrs set to their latest values</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#remove_device/3">remove_device(collection, device_id, params)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Method for <a href="https://m2x.att.com/developer/documentation/v2/collections#Remove-device-from-collection">Remove device from collection</a> endpoint</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#set_metadata_field/3">set_metadata_field(collection, name, value)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Method for <a href="https://m2x.att.com/developer/documentation/v2/collections#Update-Collection-Metadata-Field">Update Collection Metadata Field</a> endpoint</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#update!/2">update!(collection, params)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Update the remote resource using the given attrs</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#update_metadata/2">update_metadata(collection, params)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Method for <a href="https://m2x.att.com/developer/documentation/v2/collections#Update-Collection-Metadata">Update Collection Metadata</a> endpoint</p>
+</div>
+  
+</div>
+
+  </div>
+
+
+          
+
+          
+
+        </section>
+      
+
+      
+
+      
+        <section id="functions" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#functions">
+              <i class="icon-link"></i>
+            </a>
+            Functions
+          </h1>
+          <div class="detail" id="add_device/3">
+  <div class="detail-header">
+    <a href="#add_device/3" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">add_device(collection, device_id, params)</span>
+    
+    
+  </div>
+  
+  <section class="docstring">
+    <p>  Method for <a href="https://m2x.att.com/developer/documentation/v2/collections#Add-device-to-collection">Add device to collection</a> endpoint.</p>
+<p>  Add device to specified Collection.</p>
+<ul>
+<li>coll: M2X.Collection struct
+</li>
+<li>device_id: ID of the Device being added to Collection
+</li>
+<li>params: Query parameters passed as keyword arguments. View M2X API Docs for listing of available parameters
+</li>
+<li>Returns: The API response, see M2X API docs for details
+</li>
+</ul>
+
+  </section>
+</div>
+<div class="detail" id="create!/2">
+  <div class="detail-header">
+    <a href="#create!/2" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">create!(client, params \\ %{})</span>
+    
+    
+  </div>
+  
+  <section class="docstring">
+    <p>  Create a new resource using the given client and optional params,
+  returning a struct with the attrs of the new resource.</p>
+
+  </section>
+</div>
+<div class="detail" id="delete!/1">
+  <div class="detail-header">
+    <a href="#delete!/1" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">delete!(collection)</span>
+    
+    
+  </div>
+  
+  <section class="docstring">
+    <p>  Delete the remote resource.</p>
+
+  </section>
+</div>
+<div class="detail" id="fetch/2">
+  <div class="detail-header">
+    <a href="#fetch/2" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">fetch(client, id)</span>
+    
+    
+  </div>
+  
+  <section class="docstring">
+    <p>  Method for <a href="https://m2x.att.com/developer/documentation/v2/collections#View-Collection-Details">View Collection Details</a> endpoint.</p>
+<p>  Retrieve a view of the Collection associated with the given unique id.</p>
+<ul>
+<li>client: M2X.Client struct
+</li>
+<li>id: ID of the Collection to retrieve
+</li>
+<li>Returns: The matching Collection
+</li>
+</ul>
+
+  </section>
+</div>
+<div class="detail" id="get_metadata_field/2">
+  <div class="detail-header">
+    <a href="#get_metadata_field/2" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">get_metadata_field(collection, name)</span>
+    
+    
+  </div>
+  
+  <section class="docstring">
+    <p>  Method for <a href="https://m2x.att.com/developer/documentation/v2/collections#Read-Collection-Metadata-Field">Read Collection Metadata Field</a> endpoint.</p>
+<p>  Get the custom metadata for the specified Collection.</p>
+<ul>
+<li>coll: M2X.Collection struct
+</li>
+<li>name: The metadata field to be read
+</li>
+<li>Returns: The API response, see M2X API docs for details
+</li>
+</ul>
+
+  </section>
+</div>
+<div class="detail" id="list/2">
+  <div class="detail-header">
+    <a href="#list/2" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">list(client, params \\ nil)</span>
+    
+    
+  </div>
+  
+  <section class="docstring">
+    <p>  Method for <a href="https://m2x.att.com/developer/documentation/v2/collections#List-collections">List collections</a> endpoint.</p>
+<p>  Retrieve the list of Collections accessible by the authenticated API key
+  that meet the search criteria.</p>
+<ul>
+<li>client: M2X.Client struct
+</li>
+<li>params: Query parameters passed as keyword arguments. View M2X API Docs for listing of available parameters
+</li>
+<li>Returns: List of Device Distributions
+</li>
+</ul>
+
+  </section>
+</div>
+<div class="detail" id="metadata/1">
+  <div class="detail-header">
+    <a href="#metadata/1" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">metadata(collection)</span>
+    
+    
+  </div>
+  
+  <section class="docstring">
+    <p>  Method for <a href="https://m2x.att.com/developer/documentation/v2/collections#Read-Collection-Metadata">Read Collection Metadata</a> endpoint.</p>
+<p>  Get the custom metadata for the specified Collection.</p>
+<ul>
+<li>coll: M2X.Collection struct
+</li>
+<li>Returns: User defined metadata associated with the collection
+</li>
+</ul>
+
+  </section>
+</div>
+<div class="detail" id="path/1">
+  <div class="detail-header">
+    <a href="#path/1" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">path(uid)</span>
+    
+    
+  </div>
+  
+  <section class="docstring">
+    <p>  Return the API path of the Resource.</p>
+
+  </section>
+</div>
+<div class="detail" id="refreshed/1">
+  <div class="detail-header">
+    <a href="#refreshed/1" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">refreshed(collection)</span>
+    
+    
+  </div>
+  
+  <section class="docstring">
+    <p>  Query the service and return a refreshed version of the same
+  resource struct with all attrs set to their latest values.</p>
+
+  </section>
+</div>
+<div class="detail" id="remove_device/3">
+  <div class="detail-header">
+    <a href="#remove_device/3" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">remove_device(collection, device_id, params)</span>
+    
+    
+  </div>
+  
+  <section class="docstring">
+    <p>  Method for <a href="https://m2x.att.com/developer/documentation/v2/collections#Remove-device-from-collection">Remove device from collection</a> endpoint.</p>
+<p>  Remove device from secified Collection.</p>
+<ul>
+<li>coll: M2X.Collection struct
+</li>
+<li>device_id: ID of the Device being removed from Collection
+</li>
+<li>params: Query parameters passed as keyword arguments. View M2X API Docs for listing of available parameters
+</li>
+<li>Returns: The API response, see M2X API docs for details
+</li>
+</ul>
+
+  </section>
+</div>
+<div class="detail" id="set_metadata_field/3">
+  <div class="detail-header">
+    <a href="#set_metadata_field/3" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">set_metadata_field(collection, name, value)</span>
+    
+    
+  </div>
+  
+  <section class="docstring">
+    <p>  Method for <a href="https://m2x.att.com/developer/documentation/v2/collections#Update-Collection-Metadata-Field">Update Collection Metadata Field</a> endpoint.</p>
+<p>  Update the custom metadata for the specified Collection.</p>
+<ul>
+<li>coll: M2X.Collection struct
+</li>
+<li>name: The metadata field to be updated
+</li>
+<li>value: The value to update
+</li>
+<li>Returns: The API response, see M2X API docs for details
+</li>
+</ul>
+
+  </section>
+</div>
+<div class="detail" id="update!/2">
+  <div class="detail-header">
+    <a href="#update!/2" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">update!(collection, params)</span>
+    
+    
+  </div>
+  
+  <section class="docstring">
+    <p>  Update the remote resource using the given attrs.</p>
+
+  </section>
+</div>
+<div class="detail" id="update_metadata/2">
+  <div class="detail-header">
+    <a href="#update_metadata/2" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">update_metadata(collection, params)</span>
+    
+    
+  </div>
+  
+  <section class="docstring">
+    <p>  Method for <a href="https://m2x.att.com/developer/documentation/v2/collections#Update-Collection-Metadata">Update Collection Metadata</a> endpoint.</p>
+<p>  Update the custom metadata for the specified Collection.</p>
+<ul>
+<li>coll: M2X.Collection struct
+</li>
+<li>params: Query parameters passed as keyword arguments. View M2X API Docs for listing of available parameters
+</li>
+<li>Returns: The API response, see M2X API docs for details
+</li>
+</ul>
+
+  </section>
+</div>
+
+        </section>
+      
+
+      
+
+      
+          <footer class="footer">
+        <p>
+          <span class="line">
+            Built using
+            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" rel="help" target="_blank">ExDoc</a> (v0.12.0),
+          </span>
+          <span class="line">
+            designed by
+            <a href="https://twitter.com/dignifiedquire" target="_blank" title="@dignifiedquire">Friedel Ziegelmayer</a>.
+            </span>
+        </p>
+        <button class="night-mode-toggle" />
+      </footer>
+    </div>
+  </div>
+</section>
+</div>
+  <script src="dist/app-21f1a20b9e.js"></script>
+  </body>
+</html>
+
